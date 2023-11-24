@@ -1,0 +1,66 @@
+html , body {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body{
+    background-color: rgb(61, 127, 225);
+}
+#card{
+    height: 400px;
+    width: 280px;
+    background-color: #000;
+    border-radius: 10px;
+    border: 3px solid whitesmoke;
+    display: flex;
+    position: relative;
+    
+}
+#stories{
+    height: 80px;
+    width: 100%;
+    border-bottom: 0.5px solid whitesmoke;
+    padding: 20px;
+    white-space: nowrap;  /* this will help to arrange all status photos in 1 line */
+    overflow-x: auto; /* this will create a scroll bar on x axis to see other sories/status */
+    overflow-y: hidden; /* this will hide the y axis scroll bar because we dont need it here*/
+    
+}
+
+#stories::-webkit-scrollbar{    /* this will make the scroll bar invisible to look good */
+    display: none;
+
+}
+
+
+.status{
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    /*background-color: whitesmoke;*/
+    border: 3px solid rgb(18, 225, 18);
+    overflow: hidden;
+    display: inline-block;  /* this will help to arrange all status photos in 1 line */
+    margin-right: 8px;
+
+}
+.status img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+#full-screen{
+    height: 100%;
+    width: 100%;
+    /* background-color: purple; */
+    position: absolute;
+    display: none;
+    background-size: cover; /* willl help to show the story in proper size */
+    background-position: center; /* willl help to show the story in proper proper position */
+    
+}
+   
+
